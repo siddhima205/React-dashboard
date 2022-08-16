@@ -15,7 +15,7 @@
         font-weight: bold;
         color: purple;
     }
-}
+
 hr{
     height: 0;
     border:0.5px solid rgb(211, 211, 211);
@@ -54,4 +54,28 @@ hr{
         }
     }
 
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    .colorOption{
+        width: 20px;
+        height: 20px;
+       border-radius: 5px;
+       margin: 5px;
+       border: 1px solid purple;
+       cursor: pointer;
+       &:nth-child(1){
+           background-color: whitesmoke;
+       }
+       &:nth-child(2){
+        background-color: #333;
+       }
+        &:nth-child(3){
+            background-color: darkblue;
+        }
+    }
+
+    }
 }
