@@ -1,6 +1,6 @@
 import "./widget.scss"
-import { AccountBalanceOutlined, MonetizationOnOutlined,ShoppingCartOutlined,KeyboardArrowUp,PersonOutlined, SportsRugbySharp } from "@mui/icons-material";
-import { rgbToHex } from "@mui/material";
+import { AccountBalanceOutlined, MonetizationOnOutlined,ShoppingCartOutlined,KeyboardArrowUp,PersonOutlined } from "@mui/icons-material";
+
 
 const Widget = ({type}) => {
     let data;
@@ -33,8 +33,8 @@ switch(type)
         break;
         case "earning":
         data={
-            title:"USERS",
-            isMoney:false,
+            title:"EARNINGS",
+            isMoney:true,
             link:"View net earnings",
             icon:<MonetizationOnOutlined className="icon"
             style={{ color:"green", backgroundColor:"rgba(0,128,0,0.2)",
@@ -45,7 +45,7 @@ switch(type)
         case "balance":
         data={
             title:"BALANCE",
-            isMoney:false,
+            isMoney:true,
             link:"See details",
             icon:<AccountBalanceOutlined className="icon"
             style={{ color:"purple", backgroundColor:"rgba(128,0,128,0.2)",
